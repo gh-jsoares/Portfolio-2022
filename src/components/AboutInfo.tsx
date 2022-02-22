@@ -1,9 +1,9 @@
 import React from "react"
-import { EmptyProfile, Gender, MyProfile } from "../data/me"
+import { Gender, MyProfile } from "../data/me"
 
 export const AboutInfo = () => {
-    //const profile = MyProfile
-    const profile = EmptyProfile
+    const profile = MyProfile
+    //const profile = EmptyProfile
 
     return (
         <aside id="about-info">

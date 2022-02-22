@@ -19,6 +19,7 @@ export const NotFound = ({ command, project }: { command?: string | null, projec
         } else if (state?.error === undefined) {
             navigate(location.pathname, { replace: true, state: { error: true } })
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
