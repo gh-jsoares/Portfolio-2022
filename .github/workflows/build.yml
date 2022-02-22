@@ -29,9 +29,12 @@ jobs:
         git config --global user.name 'GitHub Action'
         git config --global user.email 'noreply@jsoares.me'
         git config pull.rebase true
+        git stash
+        git fetch --all
         git checkout -B gh-pages
-        git pull origin gh-pages
+        git reset --hard origin/gh-pages
         find . -maxdepth 1 -not -name "build" -not -name "." -not -name ".git" -not -name "CNAME" -exec rm -rf {} +
+        git stash pop
         mv -f build/* .
         rm -rf build
         git add .
