@@ -1,0 +1,38 @@
+article.ls
+    @media screen and (max-width: 1510px)
+        width: auto !important
+    h2
+        color: $green
+    h3
+        color: $blue
+        margin-top: 10px
+    p.headline
+        color: $blue !important
+        overflow-wrap: anywhere
+        margin-top: 5px
+    ul
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        @media screen and (max-width: 640px)
+            grid-template-columns: repeat(2, 1fr)
+        @media screen and (max-width: 430px)
+            display: block
+        li
+            margin: 5px 0
+            display: flex
+            align-items: center
+            span.icon
+                color: $blue
+            strong
+                cursor: pointer
+                color: $pink
+                transition: all 0.1s ease-in-out
+                opacity: 0.8
+                margin: 0 10px
+                &:hover
+                    opacity: 1
+                    text-decoration: underline
+            img
+                height: 25px
+                width: 25px
+            

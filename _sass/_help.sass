@@ -1,0 +1,28 @@
+header.help-menu
+    width: 1000px
+    @media screen and (max-width: 1230px)
+        width: auto
+    h2
+        color: $green
+    p
+        color: $blue
+        overflow-wrap: anywhere
+        margin-top: 5px
+        margin-bottom: 15px
+    ul
+        li
+            margin: 5px 0
+            span.icon
+                color: $blue
+            strong
+                cursor: pointer
+                color: $pink
+                transition: all 0.1s ease-in-out
+                opacity: 0.8
+                margin: 0 10px
+                &:hover
+                    opacity: 1
+                    text-decoration: underline
+            span.description
+                color: transparentize($blue, 1 - $blue-opacity)
+            

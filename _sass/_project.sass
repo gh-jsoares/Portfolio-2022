@@ -1,0 +1,71 @@
+article.project
+    @media screen and (max-width: 1510px)
+        width: auto !important
+    h2
+        color: $green
+    h3
+        color: $blue
+        margin-top: 10px
+    ul.socials
+        display: flex
+        margin: 5px 0 10px
+        transition: all 0.1s ease-in-out
+        li
+            margin: 0 10px
+            &:first-child
+                margin-left: 0
+            &:right-child
+                margin-right: 0
+            a
+                opacity: 0.8
+                &:hover
+                    opacity: 1
+            img
+                height: 25px
+                width: 25px
+    .description
+        position: relative
+        margin: 5px 20px 20px 15px
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            top: 0
+            height: 104%
+            width: 5px
+            background: $gray
+            opacity: 0.3
+            left: -15px
+        p
+            strong
+                color: inherit !important
+                margin: 0 !important
+                opacity: 1 !important
+                cursor: auto !important
+                text-decoration: none !important
+    ul
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        @media screen and (max-width: 640px)
+            grid-template-columns: repeat(2, 1fr)
+        @media screen and (max-width: 430px)
+            display: block
+        li
+            margin: 5px 0
+            display: flex
+            align-items: center
+            span.icon
+                color: $blue
+            strong
+                cursor: pointer
+                color: $pink
+                transition: all 0.1s ease-in-out
+                opacity: 0.8
+                margin: 0 10px
+                &:hover
+                    opacity: 1
+                    text-decoration: underline
+            img
+                height: 25px
+                width: 25px
+            
