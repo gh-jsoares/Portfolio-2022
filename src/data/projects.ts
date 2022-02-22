@@ -211,3 +211,18 @@ projects.set("igo-simulator", {
         findSkill("Tools/Git") as Skill,
     ]
 })
+
+projects.set("daily-001-login", {
+    name: "Design challenge 001 (Login page)",
+    description: `
+            A simple login and register web page that resizes responsively.
+        `,
+    url: "https://gh.jsoares.me/daily-001-login/",
+    github: "https://github.com/gh-jsoares/daily-001-login",
+    skills: [
+        findSkill("Languages/HTML") as Skill,
+        findSkill("Languages/CSS") as Skill,
+        findSkill("Languages/SASS") as Skill,
+        findSkill("Tools/Git") as Skill,
+    ]
+})
