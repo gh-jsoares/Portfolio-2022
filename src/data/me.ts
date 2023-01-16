@@ -15,8 +15,8 @@ export interface Profile {
 export const MyProfile: Profile = {
     name: "João Soares",
     image: "/assets/img/avatar.jpg",
-    age: 22,
-    education: "BSc in CompSci",
+    age: 23,
+    education: "MSc in CompSci",
     gender: Gender.MALE,
     nationality: "PT"
 }
@@ -33,8 +33,9 @@ export const EmptyProfile: Profile = {
 export const Bio: string[] = [
     "i have worked on several hobby projects ever since i was younger;",
     "i graduated a BSc in computer science and engineering from%txt=IST%link=https://fenix.tecnico.ulisboa.pt/en%in 2020;",
-    "i am currently writing my MSc thesis, in the same course, on secure multi-path communication;",
+    "i have written a MSc thesis, in the same course, on secure multi-path communication;",
     "the fields i specialised are cyber-security and distributed systems;",
     "i am always looking to learn more and excited to work on interesting projects;",
+    "i am currently employed as a full-stack developer at Inetum-Realdolmen, in Belgium;",
     "if a specific topic intrigues me, then i study to understand it."
 ]
