@@ -15,7 +15,7 @@ export interface Profile {
 export const MyProfile: Profile = {
     name: "João Soares",
     image: "/assets/img/avatar.jpg",
-    age: 23,
+    age: 24,
     education: "MSc in CompSci",
     gender: Gender.MALE,
     nationality: "PT"
@@ -24,7 +24,7 @@ export const MyProfile: Profile = {
 export const EmptyProfile: Profile = {
     name: "Roxie Jefferson",
     image: "/assets/img/default.jpg",
-    age: 22,
+    age: 24,
     education: "BSc in CompSci",
     gender: Gender.MALE,
     nationality: "PT"
